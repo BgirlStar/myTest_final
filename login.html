@@ -6,6 +6,8 @@
     <title>登录</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<script src="js/need.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/showBo.css" />
+	<script type="text/javascript" src="js/showBo.js"></script>
 
 </head>
 
@@ -18,9 +20,17 @@
   <div id="triangle"></div>
   <!--表单 -->
   <form name="myForm">
-	<br/>
+	<br/>    
+	<div style="display：inline;overflow:hidden">
+    <div class="ttt" style="background-image: url(img/1.png);"></div>
     <input type="email" required="required" name="email" placeholder="Email" />
-    <input type="password" required="required" name="password" placeholder="Password" /><br/>
+	</div>
+	<br/>
+	<div style="display：inline">
+	<span class="ttt"style="background-image: url(img/2.png);"></span>
+    <input type="password" required="required" name="password" placeholder="Password" />
+	</div>
+	<br/>
     <input type="submit" value="Login" onclick="check()"/> <br/>
   </form>
       <script src='js/jquery.js'></script>
